@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
+
+gem 'bootstrap-sass', '2.0.0'
+
 group :development, :test do 
 	gem 'sqlite3'
 	gem 'rspec-rails', '2.9.0'
@@ -31,7 +34,9 @@ gem 'spring',        group: :development
 
 
 group :test do
+	gem 'rspec-rails', '2.9.0'
 	gem 'capybara', '1.1.2'
+	gem 'growl', '1.0.3'
 end
 group :production do 
 	gem 'pg', '0.12.2'
